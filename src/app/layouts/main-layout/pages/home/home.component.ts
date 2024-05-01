@@ -713,7 +713,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (!profile.profilePictures || profile.profilePictures.length === 0) {
       profile.profilePictures = [
         {
-          imageUrl: '/assets/images/landingpage/OD-default-profile.png',
+          imageUrl: '/assets/images/landingpage/GS-default-profile.png',
         },
       ];
     }

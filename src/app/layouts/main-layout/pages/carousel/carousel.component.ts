@@ -28,21 +28,21 @@ export class CarouselComponent implements OnInit {
       img: 'assets/images/banner/banner-1.png',
     },
     {
-      img: 'assets/images/landingpage/OD-default-profile.png',
+      img: 'assets/images/landingpage/GS-default-profile.png',
     },
   ];
   rightImage: any = [
     {
-      img: 'assets/images/landingpage/OD-default-profile.png',
+      img: 'assets/images/landingpage/GS-default-profile.png',
     },
     {
-      img: 'assets/images/landingpage/OD-default-profile.png',
+      img: 'assets/images/landingpage/GS-default-profile.png',
     },
     {
-      img: 'assets/images/landingpage/OD-default-profile.png',
+      img: 'assets/images/landingpage/GS-default-profile.png',
     },
     {
-      img: 'assets/images/landingpage/OD-default-profile.png',
+      img: 'assets/images/landingpage/GS-default-profile.png',
     },
   ];
   dataList: any = [];
