@@ -154,7 +154,7 @@ export function app(): express.Express {
           const pdhtml = document.createElement('div');
           pdhtml.innerHTML = post?.postdescription || post?.metadescription;
           const talent = {
-            name: post?.title || post?.albumname || 'Organic-Dating Post',
+            name: post?.title || post?.albumname || 'Gamble-Social Post',
             description: pdhtml?.textContent || 'Post content',
             image:
               post?.thumbfilename ||
