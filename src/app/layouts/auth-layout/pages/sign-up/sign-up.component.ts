@@ -79,7 +79,7 @@ export class SignUpComponent implements OnInit, AfterViewInit {
   ) {
     const data = {
       title: 'Gamble social Registration',
-      url: `${environment.webUrl}sign-up`,
+      url: `${environment.webUrl}register`,
       description: 'Registration page',
       image: `${environment.webUrl}assets/images/landingpage/gamble.jpg`,
     };

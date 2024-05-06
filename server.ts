@@ -88,7 +88,7 @@ export function app(): express.Express {
           description:
             'Find like minded male or female unvaccinated organic humans!',
           image:
-            'https://www.gamble.social/assets/images/landingpage/Gamble-Social-Square-Logo.png',
+            'https://www.gamble.social/assets/images/landingpage/gamble.jpg',
           site: 'https://www.gamble.social/',
           url: 'https://www.gamble.social' + params,
           keywords: 'Gamble social',
@@ -160,7 +160,7 @@ export function app(): express.Express {
               post?.thumbfilename ||
               post?.metaimage ||
               post?.imageUrl ||
-              'https://www.gamble.social/assets/images/landingpage/Gamble-Social-Square-Logo.png',
+              'https://www.gamble.social/assets/images/landingpage/gamble.jpg',
           };
           seo.title = talent.name;
           seo.description = strip_html_tags(talent.description);
