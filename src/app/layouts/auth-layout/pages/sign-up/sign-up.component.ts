@@ -148,13 +148,13 @@ export class SignUpComponent implements OnInit, AfterViewInit {
 
   onSubmit(): void {
     this.msg = '';
-    // const token = localStorage.getItem('captcha-token');
-    // if (!token) {
-    //   this.msg = 'invalid captcha please kindly try again!';
-    //   this.type = 'danger';
-    //   this.scrollTop();
-    //   return;
-    // }
+    const token = localStorage.getItem('captcha-token');
+    if (!token) {
+      this.msg = 'invalid captcha please kindly try again!';
+      this.type = 'danger';
+      this.scrollTop();
+      return;
+    }
     if (this.registerForm.valid) {
       this.spinner.show();
       const data = {
