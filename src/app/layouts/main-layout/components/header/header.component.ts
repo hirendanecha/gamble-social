@@ -59,7 +59,7 @@ export class HeaderComponent {
         if (data?.profileId) {
           this.sharedService.isNotify = false;
           localStorage.setItem('isRead', data?.isRead);
-          this.originalFavicon.href = '/assets/images/landingpage/GS-default-profile.png';
+          this.originalFavicon.href = '/assets/images/landingpage/Gamble-Social-Square-Logo.png';
         }
       });
     }

@@ -94,7 +94,7 @@ export class LeftSidebarComponent implements OnInit {
 
   notificationNavigation() {
     this.closeSidebar();
-    this.originalFavicon.href = '/assets/images/landingpage/GS-default-profile.png';
+    this.originalFavicon.href = '/assets/images/landingpage/Gamble-Social-Square-Logo.png';
     if (this.isRead === 'N') {
       localStorage.setItem('isRead', 'Y');
       this.sharedService.isNotify = false;

@@ -28,21 +28,21 @@ export class CarouselComponent implements OnInit {
       img: 'assets/images/banner/banner-1.png',
     },
     {
-      img: 'assets/images/landingpage/GS-default-profile.png',
+      img: 'assets/images/landingpage/Gamble-Social-Square-Logo.png',
     },
   ];
   rightImage: any = [
     {
-      img: 'assets/images/landingpage/GS-default-profile.png',
+      img: 'assets/images/landingpage/Gamble-Social-Square-Logo.png',
     },
     {
-      img: 'assets/images/landingpage/GS-default-profile.png',
+      img: 'assets/images/landingpage/Gamble-Social-Square-Logo.png',
     },
     {
-      img: 'assets/images/landingpage/GS-default-profile.png',
+      img: 'assets/images/landingpage/Gamble-Social-Square-Logo.png',
     },
     {
-      img: 'assets/images/landingpage/GS-default-profile.png',
+      img: 'assets/images/landingpage/Gamble-Social-Square-Logo.png',
     },
   ];
   dataList: any = [];
