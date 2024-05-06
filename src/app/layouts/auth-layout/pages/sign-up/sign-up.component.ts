@@ -81,7 +81,7 @@ export class SignUpComponent implements OnInit, AfterViewInit {
       title: 'Gamble social Registration',
       url: `${environment.webUrl}sign-up`,
       description: 'Registration page',
-      image: `${environment.webUrl}assets/images/landingpage/Healing-Tube-Logo.png`,
+      image: `${environment.webUrl}assets/images/landingpage/gamble.jpg`,
     };
     this.seoService.updateSeoMetaData(data);
     this.theme = localStorage.getItem('theme');
