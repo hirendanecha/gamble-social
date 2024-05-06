@@ -13,6 +13,6 @@ export const environment = {
   webUrl: webUrl,
   tubeUrl: tubeUrl,
   domain: '.gamble.social',
-  siteKey: '0x4AAAAAAATU1CBk_lvwGxIy',
-  secretKey: '0x4AAAAAAATU1GanFiWSflL_7a_cnZt_SKM',
+  siteKey: '0x4AAAAAAAZb3-rSJh_tgrr6',
+  secretKey: '0x4AAAAAAAZb32TXQYB-rz_VhXxeFiJvGb8',
 };
