@@ -27,12 +27,12 @@
       </button>
     </div>
   </nav>
-
-  <div (click)="closeMenu()">
-    <div class="d-flex flex-column py-10 custom-height">
-      <div class="container">
-        <div class="row m-0 justify-content-start offset-0">
-          <div class="col-md-4 single-box p-5">
+  <div class="custom-height" *ngIf="isInnerWidthSmall" (click)="closeMenu()"></div>
+    <div (click)="closeMenu()">
+    <div class="d-flex flex-column py-10" [ngClass]="!isInnerWidthSmall ? 'custom-height' : ''">
+      <div class="offset-sm-1">
+        <div class="row m-0 justify-content-md-start justify-content-center offset-0">
+          <div class="col-md-4 landing-text single-box p-5">
             <!-- <span class="text-left mt-3">
               <h1 class="text-s">Gamble.social</h1>
             </span> -->
