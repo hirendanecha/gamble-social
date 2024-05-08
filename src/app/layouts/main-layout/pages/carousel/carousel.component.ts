@@ -60,7 +60,7 @@ export class CarouselComponent implements OnInit {
     private seoService:SeoService
   ) {
     const data = {
-      title: 'Gamble social Carousel',
+      title: 'Gamble.social Carousel',
       url: `${location.href}`,
       description: '',
     };

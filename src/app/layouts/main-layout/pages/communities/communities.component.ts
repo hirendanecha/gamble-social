@@ -37,7 +37,7 @@ export class CommunitiesComponent {
     }
     // this.getCommunities();
     const data = {
-      title: 'Gamble social Connection',
+      title: 'Gamble.social Connection',
       url: `${window.location.href}`,
       description: '',
     };

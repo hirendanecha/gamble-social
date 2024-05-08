@@ -38,7 +38,7 @@ export class ResearchDetailsComponent {
         if (res?.ID) {
           this.groupDetails = res;
           const data = {
-            title: `Gamble social Research ${this.groupDetails?.PageTitle}`,
+            title: `Gamble.social Research ${this.groupDetails?.PageTitle}`,
             url: `${window.location.href}`,
             description: this.groupDetails?.PageDescription,
             image: this.groupDetails?.CoverPicName || this.groupDetails?.ProfilePicName

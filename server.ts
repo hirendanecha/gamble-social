@@ -84,14 +84,14 @@ export function app(): express.Express {
         }
         const params = req.params[0];
         var seo: any = {
-          title: 'Gamble social',
+          title: 'Gamble.social',
           description:
             'Online Gambling, Live Sports Gambling Social Platform',
           image:
             'https://www.gamble.social/assets/images/landingpage/gamble.jpg',
           site: 'https://www.gamble.social/',
           url: 'https://www.gamble.social' + params,
-          keywords: 'Gamble social',
+          keywords: 'Gamble.social',
         };
         if (
           params.indexOf('connection/') > -1 ||
@@ -132,7 +132,7 @@ export function app(): express.Express {
           console.log({ params }, { id }, { profile: JSON.stringify(profile) });
           const talent = {
             name: profile[0]?.userName,
-            description: 'Gamble social',
+            description: 'Gamble.social',
             image: profile?.[0]?.profilePictures?.[0]?.imageUrl,
           };
           // description: profile[0]?.FirstName + ' ' + profile[0]?.LastName,
@@ -175,7 +175,7 @@ export function app(): express.Express {
 
           console.log('group===>', group);
           const talent = {
-            name: `Gamble social Research ${group?.PageTitle}`,
+            name: `Gamble.social Research ${group?.PageTitle}`,
             description: group?.PageDescription,
             image: group?.CoverPicName || group?.ProfilePicName,
           };

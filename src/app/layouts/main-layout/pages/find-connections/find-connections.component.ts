@@ -12,7 +12,7 @@ export class ConnectionsComponent implements OnInit {
     private seoService:SeoService
   ) {
     const data = {
-      title: 'Gamble social Connections',
+      title: 'Gamble.social Connections',
       url: `${location.href}`,
       description: '',
     };

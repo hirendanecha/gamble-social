@@ -24,7 +24,7 @@ export class SettingsComponent {
     private seoService:SeoService
   ) {
     const data = {
-      title: 'Gamble social Settings',
+      title: 'Gamble.social Settings',
       url: `${location.href}`,
       description: '',
     };

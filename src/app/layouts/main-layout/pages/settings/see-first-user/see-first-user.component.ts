@@ -19,7 +19,7 @@ export class SeeFirstUserComponent implements OnInit {
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     const data = {
-      title: 'Gamble social See First User',
+      title: 'Gamble.social See First User',
       url: `${window.location.href}`,
       description: '',
     };

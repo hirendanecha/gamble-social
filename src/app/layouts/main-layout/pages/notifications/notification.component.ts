@@ -23,7 +23,7 @@ export class NotificationsComponent {
     private socketService: SocketService
   ) { 
     const data = {
-      title: 'Gamble social Notification',
+      title: 'Gamble.social Notification',
       url: `${window.location.href}`,
       description: '',
     };

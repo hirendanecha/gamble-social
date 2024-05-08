@@ -78,7 +78,7 @@ export class SignUpComponent implements OnInit, AfterViewInit {
     private tokenStorageService: TokenStorageService
   ) {
     const data = {
-      title: 'Gamble social Registration',
+      title: 'Gamble.social Registration',
       url: `${environment.webUrl}register`,
       description: 'Registration page',
       image: `${environment.webUrl}assets/images/landingpage/gamble.jpg`,
