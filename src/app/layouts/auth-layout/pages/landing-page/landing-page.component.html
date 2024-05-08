@@ -1,6 +1,6 @@
 <div class="main-container">
   <nav class="navbar navbar-light px-6 px-sm-10 auth-btns">
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column c-pointer" routerLink="/">
       <img
         src="/assets/images/landingpage/Gamble-Social-Logo.png"
         class="h-60-px pt-2"
@@ -11,15 +11,15 @@
       <fa-icon [icon]="['fas', 'bars']" (click)="mobileMenu()" />
     </div>
     <div class="landing-btn d-none d-md-block d-lg-block">
+      <!-- *ngIf="!isLogin" -->
       <button
-        *ngIf="!isLogin"
         class="btn cmn-btn third w-80-px rounded-5"
         (click)="openLoginPage()"
       >
         Login
       </button>
+      <!-- *ngIf="isLogin" -->
       <button
-        *ngIf="isLogin"
         class="btn btn-outline alt third w-80-px ms-2 rounded-5"
         (click)="openSignPage()"
       >
@@ -31,8 +31,10 @@
     <div (click)="closeMenu()">
     <div class="d-flex flex-column py-10" [ngClass]="!isInnerWidthSmall ? 'custom-height' : ''">
       <div class="offset-sm-1">
-        <div class="row m-0 justify-content-md-start justify-content-center offset-0">
-          <div class="col-md-4 landing-text single-box p-5">
+        <div class="row m-0 justify-content-md-start  justify-content-center offset-0">
+        <div class="col-md-4 landing-text single-box banner-text  text-center  p-5" *ngIf="!isLogin && !isRegister">
+
+         
             <!-- <span class="text-left mt-3">
               <h1 class="text-s">Gamble.social</h1>
             </span> -->
@@ -46,13 +48,15 @@
             <!-- <span class="text-white c-fonts py-6 mt-10 text-center"
             >Social Discussion on how to heal various ailments</span
           > -->
-          </div>
         </div>
+        </div>
+        <div class="row m-0 justify-content-end offset-0"></div>
+
       </div>
       <ng-container *ngIf="isLogin">
         <app-login></app-login>
       </ng-container>
-      <ng-container *ngIf="!isLogin">
+      <ng-container *ngIf="isRegister">
         <app-sign-up></app-sign-up>
       </ng-container>
     </div>

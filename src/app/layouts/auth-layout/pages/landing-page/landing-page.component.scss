@@ -43,13 +43,14 @@
 
     .banner-text {
       // display: none;
-      max-width: 600px;
+      // max-width: 600px;
       width: 100%;
-      background-color: #0b0d0ed4;
+      background:  var(--section-1st-color);
+      box-shadow: var(--box-shadow);
       color: #000000;
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 40px;
-      height: 300px;
+      // height: 300px;
     }
 
     @media (max-width: 600px) {

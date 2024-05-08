@@ -12,6 +12,7 @@ import { TokenStorageService } from 'src/app/@shared/services/token-storage.serv
 export class LandingPageComponent {
   mobileMenuToggle: boolean = false;
   isLogin: boolean = false;
+  isRegister:boolean = false;
   isInnerWidthSmall: boolean;
   constructor(
     private router: Router,
@@ -29,7 +30,8 @@ export class LandingPageComponent {
     } else if (this.tokenStorageService.getToken()) {
       this.router.navigate(['/home']);
     }
-    this.isLogin = this.route.snapshot.routeConfig.path === 'login' || false;
+    this.isLogin = this.route.snapshot.routeConfig.path === 'login';
+    this.isRegister = this.route.snapshot.routeConfig.path === 'register';
     this.isInnerWidthSmall = window.innerWidth < 768;
     this.ngZone.runOutsideAngular(() => {
       window.addEventListener('resize', this.onResize.bind(this));
