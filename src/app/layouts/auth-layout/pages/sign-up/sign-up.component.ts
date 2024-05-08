@@ -80,7 +80,7 @@ export class SignUpComponent implements OnInit, AfterViewInit {
     const data = {
       title: 'Gamble.social Registration',
       url: `${environment.webUrl}register`,
-      description: 'Registration page',
+      description: 'Online Gambling, Live Sports Gambling Social Platform',
       image: `${environment.webUrl}assets/images/landingpage/gamble.jpg`,
     };
     this.seoService.updateSeoMetaData(data);
