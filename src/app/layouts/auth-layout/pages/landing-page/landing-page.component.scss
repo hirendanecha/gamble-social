@@ -22,6 +22,15 @@
     width: 100%;
   }
 
+  .custom-mobile-height{
+    background-image: url(/assets/images/banner/gamble.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover !important;
+    background-position:66% center;
+    height: 40vh;
+  }
+
   .custom-height {
     background-image: url(/assets/images/banner/gamble.jpg);
     background-size: cover;

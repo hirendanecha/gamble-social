@@ -59,11 +59,11 @@ export class SignUpComponent implements OnInit, AfterViewInit {
     // confirm_password: new FormControl('', [Validators.required]),
     fullname: new FormControl('', [Validators.required]),
     // captcha: new FormControl('', [Validators.required]),
-    gender: new FormControl('', [Validators.required]),
-    dateSelect: new FormControl('', Validators.required),
-    monthSelect: new FormControl('', Validators.required),
-    yearSelect: new FormControl('', Validators.required),
-    birthDate: new FormControl('', [Validators.required]),
+    // gender: new FormControl('admin@gamble.social', [Validators.required]),
+    // dateSelect: new FormControl('', Validators.required),
+    // monthSelect: new FormControl('', Validators.required),
+    // yearSelect: new FormControl('', Validators.required),
+    // birthDate: new FormControl('01-May-2001', [Validators.required]),
   });
   theme = '';
   @ViewChild('captcha', { static: false }) captchaElement: ElementRef;
@@ -141,10 +141,10 @@ export class SignUpComponent implements OnInit, AfterViewInit {
     return true;
   }
 
-  changeGender(gender: string) {
-    this.whatIm = gender;
-    this.registerForm.get('gender').setValue(this.whatIm);
-  }
+  // changeGender(gender: string) {
+  //   this.whatIm = gender;
+  //   this.registerForm.get('gender').setValue(this.whatIm);
+  // }
 
   onSubmit(): void {
     this.msg = '';
@@ -161,8 +161,8 @@ export class SignUpComponent implements OnInit, AfterViewInit {
         email: this.registerForm.value.Email,
         userName: this.registerForm.value.fullname,
         password: this.registerForm.value.Password,
-        gender: this.registerForm.value.gender,
-        birthDate: this.registerForm.value.birthDate,
+        gender: 'man',
+        birthDate: '2003-03-03',
       };
       console.log(data);
       this.customerService.createCustomer(data).subscribe({
@@ -361,27 +361,27 @@ export class SignUpComponent implements OnInit, AfterViewInit {
     );
   }
 
-  onDateMonthYearChange(controlName: string): void {
-    const control = this.registerForm.get(controlName);
-    if (control) {
-      switch (controlName) {
-        case 'dateSelect':
-          this.selectedDate = control.value;
-          break;
-        case 'monthSelect':
-          this.selectedMonth = control.value;
-          break;
-        case 'yearSelect':
-          this.selectedYear = control.value;
-          break;
-      }
-      if (this.selectedYear && this.selectedMonth && this.selectedDate) {
-        const date = moment(
-          `${this.selectedYear}-${this.selectedMonth}-${this.selectedDate}`,
-          'YYYY-MM-DD'
-        )?.format('YYYY-MM-DD');
-        this.registerForm.get('birthDate').setValue(date);
-      }
-    }
-  }
+  // onDateMonthYearChange(controlName: string): void {
+  //   const control = this.registerForm.get(controlName);
+  //   if (control) {
+  //     switch (controlName) {
+  //       case 'dateSelect':
+  //         this.selectedDate = control.value;
+  //         break;
+  //       case 'monthSelect':
+  //         this.selectedMonth = control.value;
+  //         break;
+  //       case 'yearSelect':
+  //         this.selectedYear = control.value;
+  //         break;
+  //     }
+  //     if (this.selectedYear && this.selectedMonth && this.selectedDate) {
+  //       const date = moment(
+  //         `${this.selectedYear}-${this.selectedMonth}-${this.selectedDate}`,
+  //         'YYYY-MM-DD'
+  //       )?.format('YYYY-MM-DD');
+  //       this.registerForm.get('birthDate').setValue(date);
+  //     }
+  //   }
+  // }
 }
