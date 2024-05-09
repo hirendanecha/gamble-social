@@ -27,12 +27,12 @@
       </button>
     </div>
   </nav>
-  <div class="custom-mobile-height" *ngIf="isInnerWidthSmall" (click)="closeMenu()"></div>
+  <div class="custom-mobile-height" *ngIf="isInnerWidthSmall && (isLogin || isRegister)" (click)="closeMenu()"></div>
     <div (click)="closeMenu()">
-    <div class="d-flex flex-column py-10" [ngClass]="!isInnerWidthSmall ? 'custom-height' : ''">
+    <div class="d-flex flex-column py-10" [ngClass]="!isInnerWidthSmall || (!isLogin && !isRegister) ? 'custom-height' : ''">
       <div class="offset-sm-1">
-        <div class="row m-0 justify-content-md-start  justify-content-center offset-0">
-        <div class="col-md-4 landing-text single-box banner-text  text-center  p-5" *ngIf="!isLogin && !isRegister">
+        <div class="row m-0 justify-content-md-start  justify-content-center offset-0 px-5">
+        <div class="col-md-4 landing-text single-box banner-text text-center  p-5" *ngIf="!isLogin && !isRegister">
 
          
             <!-- <span class="text-left mt-3">
