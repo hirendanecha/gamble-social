@@ -7,7 +7,6 @@ import {
   ViewChild,
 } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { NgxSpinnerService } from 'ngx-spinner';
 import { debounceTime, forkJoin, fromEvent } from 'rxjs';
 import { slugify } from 'src/app/@shared/utils/utils';
 import { Community } from 'src/app/@shared/constant/customer';
@@ -15,9 +14,10 @@ import { CommunityService } from 'src/app/@shared/services/community.service';
 import { ToastService } from 'src/app/@shared/services/toast.service';
 import { environment } from 'src/environments/environment';
 import { CustomerService } from 'src/app/@shared/services/customer.service';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { UploadFilesService } from 'src/app/@shared/services/upload-files.service';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-add-community-modal',
