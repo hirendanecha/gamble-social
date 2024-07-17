@@ -9,11 +9,13 @@ import {
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Howl } from 'howler';
 import { SocketService } from '../../services/socket.service';
-import { EncryptDecryptService } from '../../services/encrypt-decrypt.service';
-import { SoundControlService } from '../../services/sound-control.service';
+// import { EncryptDecryptService } from '../../services/encrypt-decrypt.service';
+// import { SoundControlService } from '../../services/sound-control.service';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CustomerService } from '../../services/customer.service';
+import { EncryptDecryptService } from '../../services/encrypt-decrypt.service';
+import { SoundControlService } from '../../services/sound-control.service';
 
 @Component({
   selector: 'app-incoming-call-modal',
