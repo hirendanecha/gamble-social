@@ -69,7 +69,7 @@ export class SeoService {
     }
 
     if (!tagValue.image) {
-      tagValue.image = 'https://freedom.buzz/assets/images/banner/gamble.jpg';
+      tagValue.image = 'https://gamble.social/assets/images/banner/gamble.jpg';
     }
 
     this.meta.updateTag({

@@ -19,6 +19,7 @@ export class MainLayoutComponent {
     isShowLeftSideBar: true,
     isShowRightSideBar: true,
     isShowResearchLeftSideBar: false,
+    isShowChatModule: false,
   };
 
   constructor(
@@ -47,6 +48,7 @@ export class MainLayoutComponent {
     ).subscribe((data: any) => {
       this.sidebar = data;
     });
+    
   }
 
   openLeftSidebar() {

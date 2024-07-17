@@ -101,6 +101,33 @@ import {
   faEyeSlash,
   faMoneyBill,
   faTv,
+  faWaveSquare,
+  faAtom,
+  faEnvelope,
+  faPaperclip,
+  faEllipsisH,
+  faSearch,
+  faBan,
+  faFileVideo,
+  faSliders,
+  faCopy,
+  faPhoneSlash,
+  faUsers,
+  faCommentAlt,
+  faRefresh,
+  faReply,
+  faUserTimes,
+  faPhotoFilm,
+  faRepeat,
+  faMobile,
+  faTicketAlt,
+  faSquarePlus,
+  faTableList,
+  faPhoneFlip,
+  faVoicemail,
+  faPhoneVolume,
+  faCircleChevronUp,
+  faCircleChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 import { ClaimTokenModalComponent } from './modals/clai-1776-token-modal/claim-token-modal.component';
 import { WalletLinkComponent } from './modals/wallet-download-modal/1776-wallet.component';
@@ -128,6 +155,21 @@ import { EditPostModalComponent } from './modals/edit-post-modal/edit-post-modal
 import { CompleteProfileModalComponent } from './modals/complete-profile/complete-profile-modal.component';
 import { SubscribeModalComponent } from './modals/subscribe-model/subscribe-modal.component';
 import { EditProfileModalComponent } from './modals/edit-profile/edit-profile-modal.component';
+import { QRCodeModule } from 'angularx-qrcode';
+import { ConferenceLinkComponent } from './modals/create-conference-link/conference-link-modal.component';
+import { IncomingcallModalComponent } from './modals/incoming-call-modal/incoming-call-modal.component';
+import { OutGoingCallModalComponent } from './modals/outgoing-call-modal/outgoing-call-modal.component';
+import { CreateGroupModalComponent } from './modals/create-group-modal/create-group-modal.component';
+import { EditGroupModalComponent } from './modals/edit-group-modal/edit-group-modal.component';
+import { MediaGalleryComponent } from './components/media-gallery/media-gallery.component';
+import { GalleryImgPreviewComponent } from './components/gallery-img-preview/gallery-img-preview.component';
+import { QrScanModalComponent } from './modals/qrscan-modal/qrscan-modal.component';
+import { AppQrModalComponent } from './modals/app-qr-modal/app-qr-modal.component';
+import { ForwardChatModalComponent } from './modals/forward-chat-modal/forward-chat-modal.component';
+// import { AppointmentCallComponent } from './components/appointment-call/appointment-call.component';
+import { AppointmentModalComponent } from './modals/appointment-modal/appointment-modal.component';
+import { OpenStripeComponent } from './modals/open-stripe/open-stripe.component';
+// import { ViewProfileComponent } from '../layouts/main-layout/pages/settings/view-profile/view-profile.component';
 
 const sharedComponents = [
   ConfirmationModalComponent,
@@ -151,11 +193,24 @@ const sharedComponents = [
   EditResearchModalComponent,
   SharePostModalComponent,
   RePostCardComponent,
-  HealthPraatitionerCardComponent,
-  EditPostModalComponent,
   CompleteProfileModalComponent,
   SubscribeModalComponent,
   EditProfileModalComponent,
+  HealthPraatitionerCardComponent,
+  EditPostModalComponent,
+  ConferenceLinkComponent,
+  IncomingcallModalComponent,
+  OutGoingCallModalComponent,
+  CreateGroupModalComponent,
+  EditGroupModalComponent,
+  MediaGalleryComponent,
+  GalleryImgPreviewComponent,
+  QrScanModalComponent,
+  AppQrModalComponent,
+  ForwardChatModalComponent,
+  AppointmentModalComponent,
+  OpenStripeComponent,
+
 ];
 
 const sharedModules = [
@@ -172,6 +227,8 @@ const sharedModules = [
   FontAwesomeModule,
   PipeModule,
   MentionModule,
+  QRCodeModule,
+
 ];
 
 @NgModule({
@@ -239,6 +296,15 @@ export class SharedModule {
       faFilePdf,
       faDownload,
       faShare,
+      faPhone,
+      faGlobe,
+      faList,
+      faCircle,
+      faArrowLeftLong,
+      faArrowRightLong,
+      faGraduationCap,
+      faWaveSquare,
+      faAtom,
       faHouseMedical,
       faStethoscope,
       faArrowLeftLong,
@@ -246,13 +312,14 @@ export class SharedModule {
       faGlobe,
       faList,
       faCircle,
-      faPhone,
       faHeartCirclePlus,
       faWandMagicSparkles,
       faGift,
       faChild,
       faSmoking,
+      faSlidersH,
       faGraduationCap,
+      faPhone,
       faHeart,
       faEllipsisV,
       faSlidersH,
@@ -262,12 +329,51 @@ export class SharedModule {
       faChevronRight,
       faChevronLeft,
       faHistory,
+      faGraduationCap,
+      faHeart,
+      faPhone,
+      faEnvelope,
+      faPaperclip,
+      faPhone,
+      faEllipsisH,
+      faSearch,
+      faBan,
+      faFileVideo,
+      faSliders,
+      faCopy,
+      faPhoneSlash,
+      faEllipsisV,
+      faUsers,
+      faCommentAlt,
+      faLayerGroup,
+      faGear,
       faPencil,
-      faBookOpenReader,
       faStar,
+      faBookOpenReader,
+      faRefresh,
+      faRightFromBracket,
+      faReply,
+      faUserTimes,
+      faPhotoFilm,
+      faRepeat,
+      faMobile,
+      faEye,
+      faEyeSlash,
+      faTicketAlt,
+      faPhotoFilm,
+      faCopy,
+      faSquarePlus,
+      faTableList,
+      faChevronLeft,
+      faPhoneFlip,
+      faVoicemail,
+      faPhoneVolume,
+      faCircleChevronUp,
+      faCircleChevronDown,
       faChildren,
       faMapLocationDot,
       faEyeSlash,
+      faStar,
       faMoneyBill,
       faTv
     );

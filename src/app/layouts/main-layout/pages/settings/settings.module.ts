@@ -20,6 +20,6 @@ import { SettingsComponent } from './settings.component';
     CompleteProfileComponent,
     SettingsComponent
   ],
-  imports: [SettingsRoutingModule, SharedModule],
+  imports: [SettingsRoutingModule,SharedModule],
 })
 export class SettingsModule {}

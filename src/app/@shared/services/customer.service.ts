@@ -138,4 +138,13 @@ export class CustomerService {
   updateProfileImages(id, image: string): Observable<any> {
     return this.http.put(`${this.baseUrl}/update-picture/${id}`, image);
   }
+  startCallToBuzzRing(callerData: Object): Observable<any>{
+    const url = 'https://ring-api.gamble.social.com/api/v1/customers/call-notification';
+    return this.http.post(url, callerData);
+  }
+
+  startGroupCallToBuzzRing(callerData: Object): Observable<any>{
+    const url = 'https://ring-api.gamble.social.com/api/v1/customers/group-call-notification';
+    return this.http.post(url, callerData);
+  }
 }
